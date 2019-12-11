@@ -392,6 +392,17 @@ echo "</div>";
 ?>
 </center>
 </div>
-
+<style>
+footer{
+background:black;
+color:white
+}
+</style>
+<footer>
+  <h2>Team Details:</h2>
+  <p>Arpit Bansal: arbansal@iu.edu</p>
+  <p>Shubhangi Shrivastava: Shusriva@iu.edu</p>
+  <p>Vishal Patel: vijpatel@iu.edu</p>
+</footer>
 </body>
 </html>

@@ -63,19 +63,19 @@
     
   	if($sql)
   		{
-       // ini_set("SMTP","smtp.example.com");
+       // ini_set("SMTP","smtp.gmail.com");
 
       // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
-        //ini_set("smtp_port","25");
+        //ini_set("smtp_port","587");
 
 // Please specify the return address to use
-        //ini_set('sendmail_from', 'vishal41997@gmail.com');
+        //ini_set('sendmail_from', 'iusportscout@gmail.com');
         // $subject="Account Creation";
         // $message="Hello".$playersName." Your account is successfully created";
         // mail($playersEmail,$subject,$message);
         
   			echo "<script>
-          alert('Login Successfull');
+          alert('Login Successful');
           window.location.href='http://localhost/sportsscout/playersLoginFront.php';
         </script>";
         // echo $sql;
