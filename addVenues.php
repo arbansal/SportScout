@@ -28,8 +28,8 @@ body{
 
 table{
 
-    font-family: New Century; 
-    color: white;
+	font-family: sans-serif; 
+    color: #3da8c6;
     background-image: url('images/tableBack.jpg');
     
 }

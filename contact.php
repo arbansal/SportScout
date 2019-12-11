@@ -135,18 +135,9 @@ function test_input($data) {
 
 
 
-			echo "<table>";
-			echo "<tr><td>Your Review:</td></tr>";
-			echo "<tr><td>";
-			echo $name;
-			echo "</td></tr>";
-			echo "<tr><td>";
-			echo $email;
-			echo "</td></tr>";
-			echo "<tr><td>";
-			echo $comment;
-			echo "</td></tr>";
-			
+			echo "<script>
+			alert('Your Message has been sent. Thank you!');
+			</script>";
 			?>
 		</div>
 </div>
