@@ -55,6 +55,7 @@ table{
 <body>
 <div class="page-menu-bar">
     <ul class="page-menu">
+        <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
         <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
         <li class="menu-link"><a class="link-d" href="TrainerHome.html">Trainer</a></li>
         <li class="menu-link"><a class="link-b" href="ManagerHome.html">Manager</a></li>

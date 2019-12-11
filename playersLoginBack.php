@@ -185,7 +185,7 @@ $sportssql="SELECT playersSport FROM playerssignup
         echo "<div class='col'>";
         echo "<center>"; 
         echo "<br>";
- 		echo "<div id='container'>Your Interested Sports</div>"; 
+ 		echo "<div id='container'>Sports Interested In</div>"; 
         echo "<table cellpadding='15px' class='table-bordered'>";
         echo "<col width='450px'>";
 
@@ -221,7 +221,7 @@ $looking_for_trainer="SELECT playersSport FROM playerssignup
     if (mysqli_num_rows($res) > 0) { 
         echo "<center>"; 
         echo "<br>";
- 		echo "<div id='container'>You Want Coach For following Sports</div>";
+ 		echo "<div id='container'>Looking for a Coach for the following Sports</div>";
         echo "<table class='table-bordered' cellpadding='15px'>";
         echo "<col width='450px'>";
 

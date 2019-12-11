@@ -167,7 +167,7 @@ if ($res = mysqli_query($db, $sql)) {
     if (mysqli_num_rows($res) > 0) { 
         echo "<center>"; 
         echo "<br>";
-        echo "<div id='container'> Your areas of sport for teaching </div>";
+        echo "<div id='container'> Your coaching expertise (Sports) </div>";
         echo "<br>";
         echo "<table class='table-bordered' cellpadding='10px'>"; 
         echo "<col width='450px'>";
@@ -194,7 +194,7 @@ if ($res = mysqli_query($db, $sql)) {
 
 echo "<br>";
         echo "<div id='newdiv'>";
-		echo "<a href='trainerSportInterest.php' target='_blank'>Select Sports for coaching</a>";
+		echo "<a href='trainerSportInterest.php' target='_blank'>Select Sports you can coach</a>";
 		echo "<br>";
  		echo "<a href='CoachPlayers.php' target='_blank'>Find nearby Players</a>";
         echo "</div>";

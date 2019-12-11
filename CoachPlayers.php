@@ -80,7 +80,7 @@ table{
             </tr>
             <tr>
                 <td colspan="2">
-            <input type="Submit" name='otherPlayersSubmit' value='Submit Sports' />
+            <input type="Submit" name='otherPlayersSubmit' value='Submit' />
         </td>
             </tr>
         </table>
