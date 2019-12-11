@@ -179,7 +179,11 @@ table{
             <td style="padding:5px; font-family: 'Raleway', sans-serif;  color:black">
             <select name="City" required style="border-radius:10px;  height:30px">
                 <option value='Bloomington'>Bloomington</option>
+                <option value='Chicago'>Chicago</option>
+                <option value='California'>California</option>
                 <option value='Indianapolis'>Indianapolis</option>
+                <option value='NewYork'>New York</option>
+                
             </select>
                 </td>
             </tr>
@@ -236,7 +240,7 @@ table{
         echo " <div class='row'>
                 <div class='col'>";
 
-        echo "<div id='container' style=\"font-family: 'Raleway', sans-serif; align-text:center; padding-top:15px; color:black; font-weight:bold; border-radius:10px; outline:0px\"> Other Players </div>"; 
+        echo "<div id='container' style=\"font-family: 'Raleway', sans-serif; align-text:center; padding-top:15px; color:black; font-weight:bold; border-radius:10px; outline:0px\"> Players Available </div>"; 
         echo "<br>";
 
        while ($row = mysqli_fetch_array($res)) { 
@@ -343,7 +347,7 @@ table{
     if (mysqli_num_rows($res) > 0) { 
         echo "<div class='col'>";
 		echo "<center>"; 
-        echo "<br><div id='container'  style=\"font-family: 'Raleway', sans-serif; align-text:center; padding-top:15px; color:black; font-weight:bold; border-radius:10px; outline:0px\"> Places Available</div><br>";
+        echo "<br><div id='container'  style=\"font-family: 'Raleway', sans-serif; align-text:center; padding-top:15px; color:black; font-weight:bold; border-radius:10px; outline:0px\"> Venues Available</div><br>";
 		echo "<div class='col'>";
 
        while ($row = mysqli_fetch_array($res)) { 

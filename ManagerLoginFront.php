@@ -25,7 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="./home.css">
+<link rel="stylesheet" type="text/css" href="./home2.css">
 <!--===============================================================================================-->
 </head>
 
