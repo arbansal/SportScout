@@ -116,9 +116,11 @@ table{
 
         <?php
 
+        session_start();
+
 
         if (isset($_POST['otherPlayersSubmit'])) {
-
+        
 
         $db = mysqli_connect("db.soic.indiana.edu", "p565f18_arbansal", "sqlmypass123", "p565f18_arbansal");
         
@@ -321,8 +323,13 @@ table{
     echo "</div>";
 
     $sql="SELECT * From manager Natural Join venues WHERE PlaceCity='$City'";
+    
+   
+    $playersUsername=$_SESSION["playersUsername"];
+    $playersEmail=$_SESSION["playersEmail"];
 
-        
+
+
     if ($res = mysqli_query($db, $sql)) { 
     
     if (mysqli_num_rows($res) > 0) { 
@@ -332,14 +339,21 @@ table{
 
        while ($row = mysqli_fetch_array($res)) { 
 
+
+         echo "<form method='post' action='BookingPage.php'>
+            <input type='hidden' name='placeId' value=".$row['PlaceName'].">";
+        echo "  <input type='hidden' name='playersUsername' value=".$playersUsername.">";
+        echo "  <input type='hidden' name='playersEmail' value=".$playersEmail.">";
+        echo " <input type='hidden' name='managersEmail' value=".$row['ManagerUsername'].">";
+
         echo "<table class='table-bordered' cellpadding='10px'>"; 
             echo "<tr>"; 
             
             echo "<td rowspan='5'> <img class='img-thumbnail' src=images/".$row['PlaceImage'].
-            " alt='No Profile Photo' height='300px' width='250px'/> </td>";
+            " alt='No Profile Photo' height='400px' width='400px'/> </td>";
             
 
-            echo "<td>Place:".$row['PlaceName']."</td>";
+            echo "<td colspan='2'><center> Place:".$row['PlaceName']."</center></td>";
 
             echo "</tr>";
 
@@ -348,6 +362,11 @@ table{
             echo "<td rowspan='4'>Details:      ".$row['PlaceDetails']."</td>"; 
 
             echo "</tr>";
+
+            echo "<tr><td>";
+            echo "<button  class='btn btn-success' name='bookRedirection' type='submit' '>Book</button>" ;
+            echo "</td></tr>";
+
             echo "</table>";
             echo "<br>";
 

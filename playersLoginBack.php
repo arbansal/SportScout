@@ -107,14 +107,17 @@ if ($res = mysqli_query($db, $sql)) {
         echo "<div id='container'> Your Profile </div>";
         echo "<table class='table-bordered' cellpadding='10px'>"; 
 
+        
         session_start();
         $_SESSION["playersUsername"] = $playersUsername;
+    
 
 
        while ($row = mysqli_fetch_array($res)) { 
-            echo "<tr>"; 
+
             
-            echo "<td rowspan='9'> <img class='img-thumbnail' src=images/".$row['playersPhoto'].
+            
+            echo "<td rowspan='10'> <img class='img-thumbnail' src=images/".$row['playersPhoto'].
             " alt='No Profile Photo' height='300px' width='250px'/> </td>";
             
             echo "</tr>";
@@ -169,13 +172,25 @@ if ($res = mysqli_query($db, $sql)) {
             echo "</tr>";
 
             
+            
+            echo "<tr>";
+
+            echo "<td>Email:      ".$row['playersEmail']."</td>"; 
+            $playersEmail=$row['playersEmail'];
+            echo "</tr>"; 
+
             //echo "<td>Name".$row['Lastname']."</td>"; 
             //echo "<td>".$row['Age']."</td>"; 
             //echo "</tr>"; 
         } 
+
+
+        $_SESSION['playersEmail']= $playersEmail;
         echo "</table>"; 
 
-		echo "</div>";
+     	echo "</div>";
+
+
         
       	
 
