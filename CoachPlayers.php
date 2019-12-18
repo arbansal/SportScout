@@ -24,6 +24,11 @@ body{
  box-shadow: 2px 2px 2px #000;
 }
 
+table{
+font-family: sans-serif; 
+color: #3da8c6;
+background-image: url('images/tableBack.jpg');
+}
 
 </style>
     <script type="text/javascript" src="./js/btnAll.js"></script>

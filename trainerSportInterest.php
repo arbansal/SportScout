@@ -59,7 +59,8 @@ body{
 			<option value='football'>Football</option>
 			</select>
 			<br><br>
-		    <span>-------------    </span><button id="button" class="btnAll" name="otherPlayersSubmit">SUBMIT</button></center>
+			<span>-------------    </span><button id="button" type = "Submit" class="btnAll" name="CoachSportssubmit">SUBMIT</button></center>
+		
 		</form>
 		</center>
 
@@ -87,7 +88,8 @@ body{
 		if(mysqli_query($db, $sql))
 			{
 				echo "<script>
-          alert('Sport(s) Selected');
+					alert('Sport(s) Selected');
+					window.close();
         </script>";
 			}
 		else{

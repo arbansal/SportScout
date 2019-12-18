@@ -88,7 +88,8 @@ body{
 			{
 				
 				echo "<script>
-          alert('Sport(s) Selected');
+					alert('Sport(s) Selected');
+					window.close();
         </script>";
 			}
 		else{

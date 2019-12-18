@@ -96,8 +96,8 @@ table{
             </td>
             </tr>
             <tr>
-            <td colspan="2">
-            <center><input type="Submit" name='otherPlayersSubmit' value='Submit Sports' /></center>
+            <td colspan="2" >
+            <center><span>   ----------             ---</span><button class="btnAll" type="submit" name="otherPlayersSubmit" value='Submit Sports'>SUBMIT </button></center>
             </td>
             </tr>
             </table>
@@ -332,53 +332,49 @@ table{
 
     if ($res = mysqli_query($db, $sql)) { 
     
-    if (mysqli_num_rows($res) > 0) { 
-        echo "<center>"; 
-        echo "<br><div id='container'> Places Available</div><br>";
-         
-
-       while ($row = mysqli_fetch_array($res)) { 
-
-
-         echo "<form method='post' action='BookingPage.php'>
-            <input type='hidden' name='placeId' value=".$row['PlaceName'].">";
-        echo "  <input type='hidden' name='playersUsername' value=".$playersUsername.">";
-        echo "  <input type='hidden' name='playersEmail' value=".$playersEmail.">";
-        echo " <input type='hidden' name='managersEmail' value=".$row['ManagerUsername'].">";
-
-        echo "<table class='table-bordered' cellpadding='10px'>"; 
-            echo "<tr>"; 
-            
-            echo "<td rowspan='5'> <img class='img-thumbnail' src=images/".$row['PlaceImage'].
-            " alt='No Profile Photo' height='400px' width='400px'/> </td>";
-            
-
-            echo "<td colspan='2'><center> Place:".$row['PlaceName']."</center></td>";
-
-            echo "</tr>";
-
-            echo "<tr>";
-
-            echo "<td rowspan='4'>Details:      ".$row['PlaceDetails']."</td>"; 
-
-            echo "</tr>";
-
-            echo "<tr><td>";
-            echo "<button  class='btn btn-success' name='bookRedirection' type='submit' '>Book</button>" ;
-            echo "</td></tr>";
-
-            echo "</table>";
-            echo "<br>";
-
+        if (mysqli_num_rows($res) > 0) { 
+            echo "<center>"; 
+            echo "<br><div class='heading'> Places Available</div><br>";
+             
+    
+           while ($row = mysqli_fetch_array($res)) { 
+    
+    
+             echo "<form method='post' action='BookingPage.php'>
+                <input type='hidden' name='placeId' value=".$row['PlaceName'].">";
+            echo "  <input type='hidden' name='playersUsername' value=".$playersUsername.">";
+            echo "  <input type='hidden' name='playersEmail' value=".$playersEmail.">";
+            echo " <input type='hidden' name='managersEmail' value=".$row['ManagerUsername'].">";
+    
+            echo "<table class='table-bordered' cellpadding='10px'>"; 
+                echo "<tr>"; 
                 
-        }
-
-        
-
-         
-        
-
-        }
+                echo "<td rowspan='5'> <img class='img-thumbnail' src=images/".$row['PlaceImage'].
+                " alt='No Profile Photo' height='400px' width='400px'/> </td>";
+                echo "<td rowspan='5'>";
+                echo "<table style='height:280px;padding:10%;'><tr class='tr1'>";
+                echo "<td><center> Place:".$row['PlaceName']."</center></td>";
+                echo "</tr>";
+                echo "<tr class='tr1'>";
+                echo "<td>Details:      ".$row['PlaceDetails']."</td></tr>";
+                echo "<tr >";
+                echo "<td>";
+                echo "      <button type='submit' class='btnAll' style='margin:2%' name='bookRedirection'>Book</button>" ;
+                echo "</td></tr>";
+                echo "</table>";
+                echo "</td>";
+                echo "</table>";
+                echo "<br>";
+    
+    
+            }
+    
+            
+    
+             
+            
+    
+            }
 
     }
 

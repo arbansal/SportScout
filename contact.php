@@ -113,7 +113,7 @@ function test_input($data) {
 			 </tr>
 			 <tr>
 			 	<td>
-			  <input type="submit" name="submit" value="Submit">
+			  <input type="submit" name="Contactsubmit" value="Submit">
 			  	</td>
 			  </tr>
 			 </table>
@@ -126,6 +126,7 @@ function test_input($data) {
 
 			<?php
 
+	if(isset($_POST['Contactsubmit'])){
 			$db = mysqli_connect("db.soic.indiana.edu", "p565f18_arbansal", "sqlmypass123", "p565f18_arbansal");
 
 			$sql = "INSERT INTO comments VALUES ('$name','$email','$comment')";
@@ -138,7 +139,10 @@ function test_input($data) {
 			echo "<script>
 			alert('Your Message has been sent. Thank you!');
 			</script>";
-			?>
+			
+	}
+	
+	?>
 		</div>
 </div>
 </body>

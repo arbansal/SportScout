@@ -57,8 +57,8 @@ table{
     <ul class="page-menu">
         <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
         <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="TrainerHome.html">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerHome.html">Manager</a></li>
+        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
+        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
 		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
 		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
     </ul>
@@ -401,7 +401,7 @@ color:white
 <footer>
   <h2>Team Details:</h2>
   <p>Arpit Bansal: arbansal@iu.edu</p>
-  <p>Shubhangi Shrivastava: Shusriva@iu.edu</p>
+  <p>Shubhangi Shrivastava: sshriva@iu.edu</p>
   <p>Vishal Patel: vijpatel@iu.edu</p>
 </footer>
 </body>

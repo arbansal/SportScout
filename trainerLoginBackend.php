@@ -64,11 +64,11 @@ font-family: sans-serif;
 <body >
 <div class="page-menu-bar">
             <ul class="page-menu">
-                    <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
-                    <li class="menu-link"><a class="link-a" href="trainerSportInterest.php">Expertise</a></li>
-                    <li class="menu-link"><a class="link-d" href="CoachPlayers.php">Search</a></li>
-                    <li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
-                    <li class="menu-link"><a class="link-b" href="logout.php">Logout</a></li>
+            <li class="menu-link"><a class="link-a" target='_blank' href="index.php">Home</a></li>
+        <li class="menu-link"><a class="link-a" target='_blank' href="trainerSportInterest.php" >Expertise</a></li>
+        <li class="menu-link"><a class="link-d" target='_blank' href="CoachPlayers.php">Search</a></li>
+        <li class="menu-link"><a class="link-b" target='_blank' href="contact.php">Contact Us</a></li>
+        <li class="menu-link"><a class="link-b"  href="logout.php">Logout </a></li>
                 </ul>
 
             </div>
