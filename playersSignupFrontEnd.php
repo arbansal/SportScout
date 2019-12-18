@@ -73,7 +73,7 @@ function validateForm() {
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
       <div class="wrap-login100">
   
-  <form class="login100-form validate-form" name="playersSignup" method="POST" action="test.php" enctype="multipart/form-data" >
+  <form class="login100-form validate-form" name="playersSignup" method="POST" action="playersSignup.php" enctype="multipart/form-data" >
    
    <span class="login100-form-logo">
             <i class="zmdi zmdi-landscape"></i>
