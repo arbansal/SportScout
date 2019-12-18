@@ -23,7 +23,6 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="./home.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="./home2.css">
@@ -37,8 +36,8 @@
 <ul class="page-menu">
         <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
         <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="TrainerHome.html">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerHome.html">Manager</a></li>
+        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
+        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
 		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
 		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
     </ul>
@@ -57,7 +56,7 @@
 					</span>
 
 <span class="login100-form-title p-b-34 p-t-27">
-						Log in
+						Player
 					</span>
 
 <div class="wrap-input100 validate-input" >

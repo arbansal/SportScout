@@ -36,8 +36,8 @@
     <ul class="page-menu">
         <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
         <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="TrainerHome.html">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerHome.html">Manager</a></li>
+        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
+        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
 		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
 		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
     </ul>
@@ -56,7 +56,7 @@
 					</span>
 
 <span class="login100-form-title p-b-34 p-t-27">
-						Log in
+						MANAGER
 					</span>
 
 <div class="wrap-input100 validate-input" data-validate = "Enter username">
