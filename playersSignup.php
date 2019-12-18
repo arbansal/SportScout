@@ -63,23 +63,23 @@
     
   	if($sql)
   		{
-       // ini_set("SMTP","smtp.gmail.com");
 
-      // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
-        //ini_set("smtp_port","587");
+            $to       = $playersEmail;
+            $subject  = 'SPORTSCOUT - Signup successful';
+            $message  = 'Hi, '.$playersName.'! Your registration on SportScout is completed.';
+            $headers  = 'From: iusportscout@gmail.com' . "\r\n" .
+                        'MIME-Version: 1.0' . "\r\n" .
+                        'Content-type: text/html; charset=utf-8';
+            if(!mail($to, $subject, $message, $headers))
+                echo "<script>
+                          alert(Error sending message to SportScout. Please retry.);
+                          window.location.href='http://localhost/sportsscout/playerSignup.php';
+                      </script>";
 
-// Please specify the return address to use
-        //ini_set('sendmail_from', 'iusportscout@gmail.com');
-        // $subject="Account Creation";
-        // $message="Hello".$playersName." Your account is successfully created";
-        // mail($playersEmail,$subject,$message);
-        
   			echo "<script>
-          alert('Login Successful');
+          alert('Sign-up Successful. Redirecting to login page.');
           window.location.href='http://localhost/sportsscout/playersLoginFront.php';
         </script>";
-        // echo $sql;
-        //header("Location: http://localhost/sportsscout/playersLoginFront.php");
   		}
   	else{
   		echo "<script>
