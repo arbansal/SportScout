@@ -24,17 +24,9 @@ body{
  box-shadow: 2px 2px 2px #000;
 }
 
-table{
-    font-family: sans-serif; 
-    color: #3da8c6;
-    
-    background-image: url('images/tableBack.jpg');
-    
-}
-
 
 </style>
-
+    <script type="text/javascript" src="./js/btnAll.js"></script>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -47,26 +39,23 @@ table{
 
 <body>
 
-<center>
-<div class="page-menu-bar">
-<ul class="page-menu">
-        <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
-        <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
-		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
-		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
-    </ul>
-    <div class="res-menu-button">
-        &equiv;
+    <center>
+    <div class="page-menu-bar">
+    <ul class="page-menu">
+            <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
+            <li class="menu-link"><a class="link-a" href="trainerSportInterest.php">Expertise</a></li>
+            <li class="menu-link"><a class="link-d" href="CoachPlayers.php">Search</a></li>
+            <li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
+            <li class="menu-link"><a class="link-b" href="logout.php">Logout</a></li>
+        </ul>
+
     </div>
-</div>
     
-        <div id='container'><center>Sports:</center></div>
+        <div class="heading"><center>SPORTS</center></div>
         
-        <form action='#' method='post'>
+        <form class="formAll" action='#' method='post'>
             <br>
-            <table>
+            <table class="tblAll" id="coachTbl">
             <tr>
                 <td>
             City Name:
@@ -85,7 +74,7 @@ table{
             </td>
             <td>
 
-            <select name="Sports" required>
+            <select class = "selectAll" name="Sports" required>
                 <option value='soccer'>Soccer</option>
                 <option value='cricket'>Cricket</option>
                 <option value='tennis'>Tennis</option>
@@ -94,12 +83,10 @@ table{
             </select>
             </td>
             </tr>
-            <tr>
-                <td colspan="2">
-            <input type="Submit" name='otherPlayersSubmit' value='Submit' />
-        </td>
-            </tr>
+
         </table>
+        <br>
+        <center><button id="button" name="otherPlayersSubmit">SUBMIT</button></center>
         </form>
         
 </center>

@@ -25,30 +25,32 @@ body{
 
 
 </style>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Rajdhani&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="./home2.css">
 
 
 </head>
+<body>
 		<center>
 		<div class="page-menu-bar">
-<ul class="page-menu">
-        <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
-        <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
-		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
-		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
-    </ul>
-    <div class="res-menu-button">
-        &equiv;
-    </div>
-</div>
-		<div id='container'><center>Sports for Coaching::</center></div>
+            <ul class="page-menu">
+                    <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
+                    <li class="menu-link"><a class="link-a" href="trainerSportInterest.php">Expertise</a></li>
+                    <li class="menu-link"><a class="link-d" href="CoachPlayers.php">Search</a></li>
+                    <li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
+                    <li class="menu-link"><a class="link-b" href="logout.php">Logout</a></li>
+                </ul>
+
+            </div>
+		<div class='heading'><center>SPORTS TO COACH</center></div>
 		<br>
 		<form action='#' method='post'>
+		<center>
 			<select name='Sports[]' multiple> 
 			<option value='soccer'>Soccer</option>
 			<option value='cricket'>Cricket</option>
@@ -56,7 +58,8 @@ body{
 			<option value='badminton'>Badminton</option>
 			<option value='football'>Football</option>
 			</select>
-			<input type="Submit" name='CoachSportssubmit' value='Submit Sports' />
+			<br><br>
+		    <span>-------------    </span><button id="button" class="btnAll" name="otherPlayersSubmit">SUBMIT</button></center>
 		</form>
 		</center>
 
@@ -96,4 +99,4 @@ body{
 
 	}
 		?>
-		
+</body>

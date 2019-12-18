@@ -63,18 +63,15 @@ font-family: sans-serif;
 
 <body >
 <div class="page-menu-bar">
-<ul class="page-menu">
-        <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
-        <li class="menu-link"><a class="link-a" href="playersLoginFront.php">Player</a></li>
-        <li class="menu-link"><a class="link-d" href="trainerLoginFront.php">Trainer</a></li>
-        <li class="menu-link"><a class="link-b" href="ManagerLoginFront.php">Manager</a></li>
-		<li class="menu-link"><a class="link-b" href="Admin.php">Admin </a></li>
-		<li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
-    </ul>
-    <div class="res-menu-button">
-        &equiv;
-    </div>
-</div>
+            <ul class="page-menu">
+                    <li class="menu-link"><a class="link-a" href="index.php">Home</a></li>
+                    <li class="menu-link"><a class="link-a" href="trainerSportInterest.php">Expertise</a></li>
+                    <li class="menu-link"><a class="link-d" href="CoachPlayers.php">Search</a></li>
+                    <li class="menu-link"><a class="link-b" href="contact.php">Contact Us</a></li>
+                    <li class="menu-link"><a class="link-b" href="logout.php">Logout</a></li>
+                </ul>
+
+            </div>
 <div class="vishalDivPadding"> 
 
 
@@ -82,9 +79,7 @@ font-family: sans-serif;
 
 if (isset($_POST['trainerLogin'])) {
 
-    echo "<div width='100%'id='float'>";
-    echo "<a href='logout.php'><button class='btn btn-danger'>Logout</button></a>";
-    echo "</div>";
+
 
 	$db = mysqli_connect("db.soic.indiana.edu", "p565f18_arbansal", "sqlmypass123", "p565f18_arbansal");
     
@@ -100,7 +95,7 @@ if ($res = mysqli_query($db, $sql)) {
     //echo "run";
     if (mysqli_num_rows($res) > 0) { 
     	echo "<center>"; 
-    	echo "<div id='container'> Your Profile </div>";
+    	echo "<div class='heading'> Your Profile </div>";
     	echo "<br>";
         echo "<table class='table-bordered' cellpadding='10px'>"; 
 
@@ -182,7 +177,7 @@ if ($res = mysqli_query($db, $sql)) {
     if (mysqli_num_rows($res) > 0) { 
         echo "<center>"; 
         echo "<br>";
-        echo "<div id='container'> Your coaching expertise (Sports) </div>";
+        echo "<div class='heading'> Your coaching expertise (Sports) </div>";
         echo "<br>";
         echo "<table class='table-bordered' cellpadding='10px'>"; 
         echo "<col width='450px'>";
@@ -207,13 +202,7 @@ if ($res = mysqli_query($db, $sql)) {
 
     } 
 
-echo "<br>";
-        echo "<div id='newdiv'>";
-		echo "<a href='trainerSportInterest.php' target='_blank'>Select Sports you can coach</a>";
-		echo "<br>";
- 		echo "<a href='CoachPlayers.php' target='_blank'>Find nearby Players</a>";
-        echo "</div>";
-        echo "<br>";
+
         
 
 		}
